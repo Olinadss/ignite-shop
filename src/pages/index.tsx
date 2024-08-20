@@ -53,3 +53,12 @@ export default function Home() {
     
   );
 }
+
+export const getServerSideProps = async () => {
+  return {
+    props: {
+      list: [1,2,3,4,5,6,7,8,9,10]
+    },
+    revalidate: 60 * 60 * 24 // 24 hours
+  }
+}
