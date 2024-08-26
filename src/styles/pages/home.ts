@@ -5,7 +5,7 @@ export const HomeContainer = styled('main', {
   width: '100%',
   maxWidth: 'calc(100vw - ((100vw - 1180px) / 2))',
   marginLeft: 'auto',
-  minHeight: 656
+  minHeight: 656,
 })
 
 export const Product = styled('a', {
@@ -43,7 +43,8 @@ export const Product = styled('a', {
     transition: 'all 0.2s ease-in-out',
 
     strong: {
-      fontSize: '$lg'
+      fontSize: '$lg',
+      color: '$gray100'
     },
 
     span: {
